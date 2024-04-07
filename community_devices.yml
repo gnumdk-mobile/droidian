@@ -1,0 +1,26 @@
+########################################################################
+# Basic anchors                                                        #
+########################################################################
+
+.xiaomi_miatoll_packages:
+  packages: &xiaomi_miatoll_packages
+    - adaptation-xiaomi-miatoll
+    - adaptation-miatoll-configs
+
+########################################################################
+# Device specific images                                               #
+########################################################################
+
+#
+# Xiaomi
+#
+
+# Xiaomi Redmi Note 9S/9 Pro/9 Pro Max/M2 Pro (miatoll)
+xiaomi_miatoll:
+  type: image
+  arch: arm64
+  edition: phosh
+  variant: phone
+  apilevel: 29
+
+  packages: *xiaomi_miatoll_packages
