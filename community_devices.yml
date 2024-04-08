@@ -6,6 +6,10 @@
   packages: &xiaomi_miatoll_packages
     - adaptation-xiaomi-miatoll
     - adaptation-miatoll-configs
+    - linux-image-4.14-288-xiaomi-miatoll
+    - linux-bootimage-4.14-288-xiaomi-miatoll
+    - linux-bootimage-xiaomi-miatoll
+    - qtwayland5
 
 ########################################################################
 # Device specific images                                               #
