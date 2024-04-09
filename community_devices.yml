@@ -28,3 +28,13 @@ xiaomi_miatoll:
   apilevel: 29
 
   packages: *xiaomi_miatoll_packages
+
+
+xiaomi_miatoll_light:
+  type: image
+  arch: arm64
+  edition: phosh_light
+  variant: phone
+  apilevel: 29
+
+  packages: *xiaomi_miatoll_packages
