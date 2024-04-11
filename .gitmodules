@@ -1,6 +1,6 @@
 [submodule "rootfs-templates"]
 	path = rootfs-templates
-	url = https://github.com/bellegarde-c/rootfs-templates.git
+	url = https://github.com/gnumdk-miatoll/rootfs-templates.git
 [submodule "android-recovery-flashing-template"]
 	path = android-recovery-flashing-template
 	url = https://github.com/droidian-releng/android-recovery-flashing-template.git
