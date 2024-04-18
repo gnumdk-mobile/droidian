@@ -10,6 +10,8 @@
     - linux-bootimage-4.14-336-xiaomi-miatoll
     - linux-bootimage-xiaomi-miatoll
     - qtwayland5
+    - gstreamer1.0-gl
+    - gstreamer1.0-libav
 
 ########################################################################
 # Device specific images                                               #
