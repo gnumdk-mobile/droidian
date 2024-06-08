@@ -13,6 +13,17 @@
     - gstreamer1.0-gl
     - gstreamer1.0-libav
 
+.oneplus_enchilada_packages:
+  packages: &oneplus_enchilada_packages
+    - adaptation-oneplus-enchilada
+    - adaptation-enchilada-configs
+    - linux-image-4.9-337-oneplus-enchilada
+    - linux-bootimage-4.9-337-oneplus-enchilada
+    - linux-bootimage-oneplus-enchilada
+    - qtwayland5
+    - gstreamer1.0-gl
+    - gstreamer1.0-libav
+
 ########################################################################
 # Device specific images                                               #
 ########################################################################
@@ -40,3 +51,27 @@ xiaomi_miatoll_light:
   apilevel: 29
 
   packages: *xiaomi_miatoll_packages
+
+#
+# Oneplus
+#
+
+# Oneplus 6
+oneplus_enchilada:
+  type: image
+  arch: arm64
+  edition: phosh
+  variant: phone
+  apilevel: 30
+
+  packages: *oneplus_enchilada_packages
+
+
+oneplus_enchilada_light:
+  type: image
+  arch: arm64
+  edition: phosh_light
+  variant: phone
+  apilevel: 30
+
+  packages: *oneplus_enchilada_packages
