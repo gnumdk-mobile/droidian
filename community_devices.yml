@@ -24,6 +24,16 @@
     - gstreamer1.0-gl
     - gstreamer1.0-libav
 
+
+.samsung_starlte_packages:
+  packages: &samsung_starlte_packages
+    - adaptation-samsung-exynos9810
+    - adaptation-exynos9810-configs
+    - linux-bootimage-samsung-starlte
+    - qtwayland5
+    - gstreamer1.0-gl
+    - gstreamer1.0-libav
+
 ########################################################################
 # Device specific images                                               #
 ########################################################################
@@ -52,26 +62,26 @@ xiaomi_miatoll_light:
 
   packages: *xiaomi_miatoll_packages
 
+ 
 #
-# Oneplus
+# Samsung
 #
 
-# Oneplus 6
-oneplus_enchilada:
+# Samsung Galaxy S9 (Exynos) (starlte)
+samsung_starlte:
   type: image
   arch: arm64
   edition: phosh
   variant: phone
-  apilevel: 30
+  apilevel: 29
 
-  packages: *oneplus_enchilada_packages
+  packages: *samsung_starlte_packages
 
-
-oneplus_enchilada_light:
+samsung_starlte_light:
   type: image
   arch: arm64
   edition: phosh_light
   variant: phone
-  apilevel: 30
+  apilevel: 29
 
-  packages: *oneplus_enchilada_packages
+  packages: *samsung_starlte_packages
