@@ -61,27 +61,3 @@ xiaomi_miatoll_light:
   apilevel: 29
 
   packages: *xiaomi_miatoll_packages
-
- 
-#
-# Samsung
-#
-
-# Samsung Galaxy S9 (Exynos) (starlte)
-samsung_starlte:
-  type: image
-  arch: arm64
-  edition: phosh
-  variant: phone
-  apilevel: 29
-
-  packages: *samsung_starlte_packages
-
-samsung_starlte_light:
-  type: image
-  arch: arm64
-  edition: phosh_light
-  variant: phone
-  apilevel: 29
-
-  packages: *samsung_starlte_packages
